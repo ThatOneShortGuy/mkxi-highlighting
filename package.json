@@ -1,0 +1,25 @@
+{
+  "name": "uvu-kxi",
+  "displayName": "UVU KXI highlighting",
+  "description": "UVU's KXI language syntax highlighting",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "kxi",
+      "aliases": ["KXI", "kxi"],
+      "extensions": [".kxi"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "kxi",
+      "scopeName": "source.kxi",
+      "path": "./syntaxes/kxi.tmLanguage.json"
+    }]
+  }
+}

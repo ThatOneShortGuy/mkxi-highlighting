@@ -1,0 +1,101 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "KXI",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#constants"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#storages"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#variables"
+		}
+	],
+	"repository": {
+		"comments": {
+			"patterns": [{
+				"name": "comment.line.double-slash.kxi",
+				"match": "//.*$"
+			}]
+		},
+		"constants": {
+			"patterns": [{
+				"name": "constant.numeric.kxi",
+				"match": "\\b(\\d+)\\b"
+			},
+			{
+				"name": "constant.character.kxi",
+				"match": "'.'"
+			},
+			{
+				"name": "constant.character.escape.kxi",
+				"match": "\\\\."
+			},
+			{
+				"name": "constant.language.kxi",
+				"match": "\\b(null|true|false)\\b"
+			}]
+		},
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.kxi",
+				"match": "\\b(break|else|for|if|return|while)\\b"
+			},
+			{
+				"name": "keyword.operator.kxi",
+				"match": "\\b(=|==|!=|>=|<=|>|<|&&|\\|\\||!|\\+|-|\\*|/|\\+=|-=|\\*=|/=)\\b"
+			}]
+		},
+		"storages": {
+			"patterns": [{
+				"name": "storage.type.kxi",
+				"match": "\\b(int|bool|char|void|class|new)\\b"
+			},
+			{
+				"name": "storage.modifier.kxi",
+				"match": "\\b(public|private)\\b"
+			}]
+		},
+		"strings": {
+			"patterns": [{
+				"name": "string.quoted.double.kxi",
+				"begin": "\"",
+				"end": "\"",
+				"patterns": [{
+					"name": "constant.character.escape.kxi",
+					"match": "\\\\."
+				}]
+			},
+			{
+				"name": "string.quoted.triple.kxi",
+				"begin": "\"\"\"",
+				"end": "\"\"\"",
+				"patterns": [{
+					"name": "constant.character.escape.kxi",
+					"match": "\\\\."
+				}]
+			}]
+		},
+		"variables": {
+			"patterns": [{
+				"name": "variable.language.kxi",
+				"match": "\\b(this|cout|cin)\\b"
+			},
+			{
+				"name": "variable.other.kxi",
+				"match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\b"
+			}]
+		}
+	},
+	"scopeName": "source.kxi"
+}
