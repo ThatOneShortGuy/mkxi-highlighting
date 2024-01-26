@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "KXI",
+	"name": "MKXI",
 	"patterns": [
 		{
 			"include": "#comments"
@@ -59,7 +59,7 @@
 		"storages": {
 			"patterns": [{
 				"name": "storage.type.kxi",
-				"match": "\\b(int|bool|char|void|class|new)\\b"
+				"match": "\\b(num|bool|char|void|class|new)\\b"
 			},
 			{
 				"name": "storage.modifier.kxi",

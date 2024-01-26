@@ -1,7 +1,7 @@
 {
-  "name": "uvu-kxi",
-  "displayName": "UVU KXI highlighting",
-  "description": "UVU's KXI language syntax highlighting",
+  "name": "MindustryKXI",
+  "displayName": "MindustryKXI",
+  "description": "MindustryKXI language syntax highlighting",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.83.0"
@@ -12,14 +12,14 @@
   "contributes": {
     "languages": [{
       "id": "kxi",
-      "aliases": ["KXI", "kxi"],
-      "extensions": [".kxi"],
+      "aliases": ["MKXI", "mkxi"],
+      "extensions": [".mkxi"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
-      "language": "kxi",
-      "scopeName": "source.kxi",
-      "path": "./syntaxes/kxi.tmLanguage.json"
+      "language": "mkxi",
+      "scopeName": "source.mkxi",
+      "path": "./syntaxes/mkxi.tmLanguage.json"
     }]
   }
 }
