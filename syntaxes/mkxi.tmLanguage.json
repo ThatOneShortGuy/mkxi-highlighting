@@ -24,78 +24,78 @@
 	"repository": {
 		"comments": {
 			"patterns": [{
-				"name": "comment.line.double-slash.kxi",
+				"name": "comment.line.double-slash.mkxi",
 				"match": "//.*$"
 			}]
 		},
 		"constants": {
 			"patterns": [{
-				"name": "constant.numeric.kxi",
+				"name": "constant.numeric.mkxi",
 				"match": "\\b(\\d+)\\b"
 			},
 			{
-				"name": "constant.character.kxi",
+				"name": "constant.character.mkxi",
 				"match": "'.'"
 			},
 			{
-				"name": "constant.character.escape.kxi",
+				"name": "constant.character.escape.mkxi",
 				"match": "\\\\."
 			},
 			{
-				"name": "constant.language.kxi",
+				"name": "constant.language.mkxi",
 				"match": "\\b(null|true|false)\\b"
 			}]
 		},
 		"keywords": {
 			"patterns": [{
-				"name": "keyword.control.kxi",
+				"name": "keyword.control.mkxi",
 				"match": "\\b(break|else|for|if|return|while)\\b"
 			},
 			{
-				"name": "keyword.operator.kxi",
+				"name": "keyword.operator.mkxi",
 				"match": "\\b(=|==|!=|>=|<=|>|<|&&|\\|\\||!|\\+|-|\\*|/|\\+=|-=|\\*=|/=)\\b"
 			}]
 		},
 		"storages": {
 			"patterns": [{
-				"name": "storage.type.kxi",
+				"name": "storage.type.mkxi",
 				"match": "\\b(num|bool|char|void|class|new)\\b"
 			},
 			{
-				"name": "storage.modifier.kxi",
+				"name": "storage.modifier.mkxi",
 				"match": "\\b(public|private)\\b"
 			}]
 		},
 		"strings": {
 			"patterns": [{
-				"name": "string.quoted.double.kxi",
+				"name": "string.quoted.double.mkxi",
 				"begin": "\"",
 				"end": "\"",
 				"patterns": [{
-					"name": "constant.character.escape.kxi",
+					"name": "constant.character.escape.mkxi",
 					"match": "\\\\."
 				}]
 			},
 			{
-				"name": "string.quoted.triple.kxi",
+				"name": "string.quoted.triple.mkxi",
 				"begin": "\"\"\"",
 				"end": "\"\"\"",
 				"patterns": [{
-					"name": "constant.character.escape.kxi",
+					"name": "constant.character.escape.mkxi",
 					"match": "\\\\."
 				}]
 			}]
 		},
 		"variables": {
 			"patterns": [{
-				"name": "variable.language.kxi",
+				"name": "variable.language.mkxi",
 				"match": "\\b(this|cout|cin)\\b"
 			},
 			{
-				"name": "variable.other.kxi",
+				"name": "variable.other.mkxi",
 				"match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\b"
 			}]
 		}
 	},
-	"scopeName": "source.kxi"
+	"scopeName": "source.mkxi"
 }

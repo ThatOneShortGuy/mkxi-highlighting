@@ -1,5 +1,5 @@
 {
-  "name": "MindustryKXI",
+  "name": "mindustrykxi",
   "displayName": "MindustryKXI",
   "description": "MindustryKXI language syntax highlighting",
   "version": "0.0.1",
@@ -11,7 +11,7 @@
   ],
   "contributes": {
     "languages": [{
-      "id": "kxi",
+      "id": "mkxi",
       "aliases": ["MKXI", "mkxi"],
       "extensions": [".mkxi"],
       "configuration": "./language-configuration.json"
