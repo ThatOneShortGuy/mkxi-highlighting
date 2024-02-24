@@ -4,6 +4,8 @@ This is the syntax highlighting for the [Mindustry Compiler](https://github.com/
 
 ![Syntax Highlighting](imgs/syntaxhighlighting.png)
 
+Note that comments show where the specific Mindustry related commands need to be added.
+
 ## Installation
 
 It's not added to the VS Code Marketplace yet, so you have to install it manually. To do so, the extensions folder is located at `~/.vscode/extensions` on Linux and macOS, and at `%USERPROFILE%\.vscode\extensions` on Windows.
